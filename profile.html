@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="top-header top-header-transparent">
         <div class="header__top">
             <div class="header__column">
                 <!-- 비행기 아이콘 필요 -->
@@ -47,23 +48,29 @@
 
     <main class="profile">
         <header class="profile__header">
-            <img src="images/avatar.jpg" alt="">
-            <h3 class="profile__header-title">Jeong suji</h3>
+            <div class="profile__header-container">
+                <img src="images/avatar.jpg" alt="">
+                <h3 class="profile__header-title">Jeong suji</h3>
+            </div>            
         </header>
-        <input type="text" placeholder="dev_suji@naver.com">
-        <div class="profile_actions">
-            <!-- div.profile__actions*2>span.profile_action-circle(i.fa)+span.profile -->
-            <div class="profile__actions">
-                <span class="profile_action-circle">
-                <i class="fa fa-comment fa-2x"></i>
-                </span>
-                <span class="profile__actions-title">My Chatroosm</span>
-            </div>
-            <div class="profile__actions">
-                <span class="profile_action-circle">
-                <i class="fa fa-pencil fa-2x"></i>
-                </span>
-                <span class="profile__actions-title">Edit Profile</span>
+        <div class="profile__container">
+            <div class="profile__action-title">
+                <input type="text" placeholder="dev_suji@naver.com">
+                <div class="profile_actions">
+                    <!-- div.profile__actions*2>span.profile_action-circle(i.fa)+span.profile -->
+                    <div class="profile__action">
+                        <span class="profile_action-circle">
+                        <i class="fa fa-comment fa-lg"></i>
+                        </span>
+                        <span class="profile__action-title">My Chatroosm</span>
+                    </div>
+                    <div class="profile__action">
+                        <span class="profile_action-circle">
+                        <i class="fa fa-pencil fa-lg"></i>
+                        </span>
+                        <span class="profile__action-title">Edit Profile</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
