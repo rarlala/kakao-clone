@@ -1,0 +1,14 @@
+@media screen and (min-width:530px){
+    .bigScreenText{
+        display: flex;
+    }
+}
+
+/* 
+휴대폰이 landscapemode일때 css를 설정하고 싶다면
+
+and (orientation:landscape) 
+
+또는 and (orientation:portrait) 모드도 있다고 함.
+
+*/
